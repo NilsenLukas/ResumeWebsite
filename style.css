@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: top 0.3s;
+  background: url('Images/CodingGif.gif') no-repeat center top ;
+  
+  background-size: cover;
+}
+
+.headerIndex{
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.logo {
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: -60px;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 20px;
+  position: relative;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+  width: 0;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.footerIndex {
+  text-align: center;
+ 
+  color: white;
+  padding: 8px 16px;
+}
+
+.footerIndex a {
+  color: white;
+  text-decoration: none;
+  background-color: gray; /* Light gray background for the links */
+  padding: 8px 16px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners for the link boxes */
+  margin: 0 10px; /* Spacing between the links */
+  position: relative; /* Position relative for the underline pseudo-element */
+  display: inline-block;
+  overflow: hidden; /* Ensures the pseudo-element doesn't extend outside */
+  transition: background-color 0.3s; /* Transition for the background color */
+}
+
+.footerIndex a::after {
+  content: '';
+  position: absolute;
+  bottom: 10px; /* Adjust this value to move the underline up towards the text */
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white; /* Color of the underline */
+  transition: width 0.3s ease-out; /* Transition for the underline animation */
+  transform: translateY(100%); /* Ensures the underline starts just below the text */
+}
+
+.footerIndex a:hover::after {
+  width: 100%; /* Full width to create the underline effect */
+}
+
+.content {
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+  padding: 10px 20px;
+}
+
+/*intro page*/
+
+.indexPage {
+  position: relative;
+  width: 100%;
+  height: 135vh;
+  background: url('Images/CodingGif.gif') no-repeat center center;
+  background-size: cover;
+  padding-top: 1;
+}
+
+/* Introduction section styled as a grey box */
+.introduction-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff; /* White background for the content box */
+  border-radius: 10px; /* Rounded corners for the content box */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  padding: 40px;
+  margin: 80px auto; /* Center the box with top and bottom margin */
+  max-width: 1200px; /* Maximum width of the box */
+  width: 80%; /* Width of the box relative to the parent */
+  transform: translateY(-13%); /* Positioning adjustment if needed */
+}
+
+/* Styling for text content within the introduction */
+.intro-text {
+  max-width: 50%;
+}
+
+.intro-text h1 {
+  font-size: 3em; /* Larger font size for main title */
+  color: #333; /* Darker color for contrast */
+  margin-bottom: 0.3em;
+}
+
+.intro-text h2 {
+  font-size: 2em; /* Subtitle size */
+  color: #555; /* Slightly lighter than the main title */
+  margin-bottom: 1em;
+}
+
+.intro-text p {
+  line-height: 1.6; /* Increased line height for readability */
+  color: #666; /* Grey color for the paragraph */
+}
+
+/* Image styling */
+.intro-image img {
+  border-radius: 40%; /* Circular image */
+  width: 250px; /* Fixed width */
+  height: 350px; /* Fixed height */
+  object-fit: cover; /* Ensures image covers the area without distortion */
+  margin-left: 45px; /* Space between text and image */
+  object-position: top;
+  transform: scale(1);
+}
+hr {
+  border: none; /* Removes the default border */
+  height: 1px; /* Thickness of the line */
+  background-color: #ccc; /* Color of the line */
+  margin: 20px 0; /* Space above and below the line */
+}
+
+
+
+
+
+/* about me page */
+.three-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .columnAM {
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 1; /* Sets all columns to distribute space equally */
+    
+  }
+  
+  
+  /* To center content within each column */
+  .columnAM > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Styling for images and text within the columns */
+  .profile-image, .about-me-text {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .personal-image{
+    width: 65%;
+    margin-bottom: 20px;
+    border-radius: 0%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+  
+
+/* Hobbies section styling */
+.hobby-section h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/*professional work experiance*/
+.two-columnsWE {
+    display: flex;
+    width: 100%;
+    margin: 20px;
+
+  }
+  
+  .image-column {
+    flex-basis: 25%;
+    padding-left: 50px;
+    
+    /* Adjust padding as needed */
+  }
+  .skills-content{
+    display: flex;
+  }
+  .text-column {
+    flex-basis: 75%;
+    padding-left: 100px;
+    /* Adjust padding as needed */
+  }
+  .personal-skills {
+    flex: 1.3;
+    padding-left: -150px;
+    
+    
+    /* Adjust padding as needed */
+  }
+  
+  .coding-skills {
+    padding-left: 25px;
+    flex: 1.2;
+    
+    /* Adjust padding as needed */
+  }
+  
+  /* Style for the profile image if used in the image column */
+  .profile-image {
+    width: 100%; /* Adjust as needed */
+    height: auto;
+    border-radius: 1%; /* Optional, for a rounded image */
+    
+  }
+  
+  /* Style for the sections in the text column */
+  .education, .work-experience {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  /* Ensure the text is readable and not too wide */
+  .text-column > section {
+    max-width: 800px; /* or whatever maximum width you prefer */
+    text-align: left;
+  }
+  .listIndent{
+    padding-left: 35px;
+  }
+
+  /*Legal assets logo formatting*/
+  .profile-image2 {
+    width: 200px;;
+    height:175px;
+    overflow: hidden;
+  }
+  .resume-download {
+    width: 100%; /* Ensures the div takes full width */
+    padding: 20px;
+    text-align: center; /* Centers the content horizontally */
+    margin-top: 20px; /* Adds some space above the download link */
+  }
+  
+  .resume-download h2 {
+    margin-bottom: 10px;
+  }
+  
+  .resume-download a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333; /* Example button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resume-download a:hover {
+    background-color: #555; /* Darken button on hover */
+  }
+
+  /*skills page*/
+
+  .skills-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .personal-skills, .coding-skills {
+    margin-bottom: 30px;
+  }
+  
+  .skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 15px;
+  }
+  
+  .skill-logo {
+    width: 60px; /* Adjust size as needed */
+    height: 60px;
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 20px;
+  }
+  
+  .skill-description h2 {
+    margin-bottom: 5px;
+  }
+  
+  .skill-description p {
+    font-size: 14px; /* Adjust size as needed */
+  }
+
+  /*project page*/
+
+  .projects-content {
+    max-width: 800px; /* Adjust width as needed */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden; /* Ensures the image respects the container's rounded corners */
+  }
+  
+  .project-content {
+    padding: 20px;
+    flex: 1; /* Takes up the remaining space that the image doesn't use */
+  }
+  
+  .project-image-container {
+    flex-shrink: 0; /* Prevents the image container from shrinking */
+    width: 300px; /* Set a fixed width for the image container */
+    height: 350px; /* Set a fixed height for the image container */
+    border-radius: 10px; /* Rounded corners for the image container */
+    overflow: hidden; /* Ensures the image respects the container's rounded corners */
+  }
+  
+  .project-image {
+    width: 100%; /* Ensures the image covers the container width */
+    height: 100%; /* Ensures the image covers the container height */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+  }
+  
+  .github-link {
+    display: inline-block;
+    background-color: #333; /* GitHub color theme */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px; /* Space from the description to link */
+  }
+  
+  .github-link:hover {
+    background-color: #555; /* Darken the button on hover */
+  }
+  /*technical writing page*/
+  .technical-writing-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between grid items */
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .writing-entry {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .writing-description {
+    padding: 20px;
+    flex: 1; /* Flex grow to fill available space */
+  }
+  
+  .writing-description h3 {
+    margin-top: 0;
+  }
+  
+  .writing-description p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .writing-pdf-preview {
+    flex-shrink: 0; /* Prevents the PDF preview from shrinking */
+    width: 375px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    overflow: hidden; /* To handle any overflow */
+    border-radius: 0 10px 10px 0; /* Rounded corners on the right side */
+  }
+  
+/*media*/
+@media (max-width: 1024px) {
+    .three-columns {
+      flex-direction: column;
+    }
+  
+    .column {
+      width: 100%; /* Each column takes full width on small screens */
+      padding: 10px; /* Adjust padding for smaller screens if needed */
+    }
+  
+    .personal-image {
+      max-width: 80%; /* Adjust image size on smaller screens */
+      margin: 0 auto; /* Center images */
+      border-radius: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      padding: 20px; /* Adjust header padding on smaller screens */
+    }
+  
+    .profile-image {
+      width: 120px; /* Adjust profile image size on smaller screens */
+      height: 120px;
+      border-radius: 50%; /* Circular images on smaller screens */
+    }
+    .skill {
+      flex-direction: column;
+      align-items: start;
+    }
+  
+    .skill-logo {
+      margin-bottom: 10px;
+    }
+    .introduction-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .intro-image {
+      margin-top: 20px;
+    }
+  
+    .intro-image img {
+      width: 200px; /* Smaller image for mobile */
+    }
+  }
+  
+  body {
+    overflow-x: hidden; /* Prevents horizontal scroll */
+  }
+
+
